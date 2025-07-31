@@ -1,0 +1,1 @@
+- since we store all the congfiguration files in one place ur going to have to symbolicly link all the external config paths back to this folder.

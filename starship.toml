@@ -1,2 +1,19 @@
+format = "$directory$git_branch$character"
+add_newline = true
+
+[git_branch]
+format ='[🌵<$branch>(:$remote_branch)]($style) '
+style = 'bold red'
+truncation_symbol = ''
+
+[directory]
+truncation_length = 1
+
+[git_commit]
+format ='[\($hash$tag\)]'
+tag_disabled = false
+
 [character] # The name of the module we are configuring is 'character'
-success_symbol = '[➜](bold green)'
+success_symbol = '[➜](bold blue)'
+error_symbol = '[X](bold red)'
+

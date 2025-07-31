@@ -9,7 +9,7 @@ config.default_prog = {"C:/Windows/System32/WindowsPowerShell/v1.0/powershell.ex
 
 -- [Window]
 config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.98
+config.window_background_opacity = 1.0
 config.window_padding = {
   left = 0, right = 0, top = 15, bottom = 0,
 }
@@ -22,14 +22,12 @@ config.colors = { tab_bar = { background = "#282828", active_tab = { bg_color = 
 
 -- [Font]
 config.font = wezterm.font("Fira Code", {weight="Medium", stretch="Normal", style="Normal"})
--- config.font = wezterm.font('JetBrains Mono', { weight = 'Bold', italic = true })
--- config.font = wezterm.font('Fira Code', { weight = 'Bold', italic = true })
 
 -- [Keybinds]
 config.leader = {key = 'b', mods = 'CTRL', timeout_milliseconds = 1000 }
 config.keys = {
-  {key = 'j', mods = 'LEADER', action = wezterm.action.SpawnTab 'CurrentPaneDomain'},
-  { key = 'h', mods = 'LEADER', action = wezterm.action.CloseCurrentTab {confirm  = false}},
+  {key = 'w', mods = 'LEADER', action = wezterm.action.SpawnTab 'CurrentPaneDomain'},
+  { key = 'k', mods = 'LEADER', action = wezterm.action.CloseCurrentTab {confirm  = false}},
 }
 
 for i = 1, 8 do
@@ -45,8 +43,7 @@ end);
 
 
 -- [Theme]
-config.color_scheme = 'N0Tch2K (Gogh)'
-
+config.color_scheme = 'Classic Dark (base16)'
 -- [error]
 config.warn_about_missing_glyphs = false
 
