@@ -63,6 +63,35 @@ dap.adapters.codelldb = {
     args = {"--port", "${port}"},
     detached = false,  -- required on Windows
   },
+
+  setupCommands = {
+  {
+    text = "set step-mode on",
+    description = "Step into functions without debug symbols",
+    ignoreFailures = true
+  },
+  {
+    text = "set scheduler-locking off", 
+    description = "Fix thread state issues",
+    ignoreFailures = true
+  },
+  {
+    text = "set print object on",
+    description = "Show actual object types for structs",
+    ignoreFailures = true
+  },
+  {
+    text = "set confirm off",
+    description = "Disable prompts that might hang DAP",
+    ignoreFailures = true
+  },
+  {
+    text = "set breakpoint pending on",
+    description = "Allow breakpoints in not-yet-loaded code",
+    ignoreFailures = true
+  },
+}
+
 }
 
 dap.adapters.gdb = {

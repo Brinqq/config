@@ -4,9 +4,8 @@ require("harpoon")
 local opt = {noremap = true, silent = true}
 local km = vim.keymap.set
 
-
 vim.g.mapleader = " "
-vim.g.maplocalleader = ","
+-- vim.g.maplocalleader = ","
 
 -- Copy to system clip board
 km("v", "<leader>y", "\"+y")

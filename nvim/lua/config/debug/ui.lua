@@ -1,6 +1,5 @@
 local ui = require("dapui")
 
-
 local uiconfig = {
     layouts = {
 

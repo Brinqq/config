@@ -44,8 +44,14 @@ local kind_icons = {
   TypeParameter = "",
 }
 
-vim.keymap.set("n", "<M-q>", "<cmd>let g:Cmp_toggle = v:true<cr>", {noremap = true, silent = true})
-vim.keymap.set("n", "<M-w>", "<cmd>let g:Cmp_toggle = v:false<cr>", {noremap = true, silent = true})
+
+vim.keymap.set("n", "<leader>uc", function()
+  if vim.g.Cmp_toggle == false then
+  vim.g.Cmp_toggle = true
+  else  
+  vim.g.Cmp_toggle = false
+  end
+end, {noremap = true, silent = true})
 
 
 cmp.setup {

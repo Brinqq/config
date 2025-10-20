@@ -5,7 +5,7 @@ local action_state = require("telescope.actions.state")
 
 require("oil").setup({
   delete_to_trash = true,
-  show_options={
+  view_options= {
     show_hidden = true,
   },
 })

@@ -91,7 +91,9 @@ return require('packer').startup(function(use)
   use {"MunifTanjim/nui.nvim", commit = "53e907ffe5eedebdca1cd503b00aa8692068ca46"}
 
   -- themes
-   use "sainnhe/gruvbox-material"
+  use "bjarneo/nes.nvim"
+
+
 
 
 end)

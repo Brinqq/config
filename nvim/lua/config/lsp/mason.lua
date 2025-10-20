@@ -21,6 +21,21 @@ local lua_ls_opts = {
   },
 }
 
+local clangd_opts = {
+  on_attach = require("config.lsp.handler").on_attach, capabilities = require("config.lsp.handler").capabilities,
+    cmd = {
+    "clangd",
+    "--completion-style=detailed",
+    "--header-insertion-decorators",
+    "--function-arg-placeholders",
+    "--pch-storage=memory",
+    "--background-index",
+    "--recovery-ast",
+    "--completion-parse=always",
+    "--recovery-ast-type",
+  },
+}
+
 local rust_opts = {
   on_attach = require("config.lsp.handler").on_attach,
   capabilities = require("config.lsp.handler").capabilities,
@@ -36,9 +51,8 @@ local rust_opts = {
   },
 }
 
-
 local defaultServers = {
-  {server = "clangd", opts = default_opts},
+  {server = "clangd", opts = clangd_opts},
   {server = "rust_analyzer", opts = rust_opts},
   {server = "pyright", opts = default_opts},
   {server = "bashls", opts = default_opts},

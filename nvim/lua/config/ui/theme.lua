@@ -46,9 +46,13 @@ function ECC()
   sign('DapStopped', { text='', texthl='DapBreakpointStoppedSymbol', linehl='', numhl=''})
   sign('DapBreakpoint', {text= "B", texthl='DapBreakpoint',})
 
+
+  --tmp
+  vim.api.nvim_set_hl(0, 'Visual', {bg = "#111211"})
+  vim.api.nvim_set_hl(0, 'pmenu', {bg = "#0c0d0c"})
 end
 
-vim.cmd("colorscheme gruvbox-material")
+vim.cmd("colorscheme nes")
 require("transparent").setup({
   groups = {
     'Normal', 'NormalNC', 'Comment', 'Constant', 'Special', 'Identifier', 'Statement', 'PreProc', 'Type', 'Underlined', 'Todo', 'String', 'Function',
