@@ -1,2 +1,3 @@
 scoop/
 .glaze-wm/errors.log
+nvim/plugin/*

@@ -43,7 +43,7 @@ end);
 
 
 -- [Theme]
-config.color_scheme = 'Classic Dark (base16)'
+config.color_scheme = 'Dissonance (Gogh)'
 -- [error]
 config.warn_about_missing_glyphs = false
 

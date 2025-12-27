@@ -52,7 +52,7 @@ function ECC()
   vim.api.nvim_set_hl(0, 'pmenu', {bg = "#0c0d0c"})
 end
 
-vim.cmd("colorscheme nes")
+vim.cmd("colorscheme vitesse")
 require("transparent").setup({
   groups = {
     'Normal', 'NormalNC', 'Comment', 'Constant', 'Special', 'Identifier', 'Statement', 'PreProc', 'Type', 'Underlined', 'Todo', 'String', 'Function',
